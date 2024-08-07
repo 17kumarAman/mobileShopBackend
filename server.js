@@ -20,7 +20,7 @@ mongoose.connect(process.env.MONGODB_URI).then(() => {
 });
 
 app.use("/users", userRoutes);
-app.use("/mobile", mobileRoutes);
+app.use("/products", mobileRoutes);
 app.use('/users', cartRoutes)
 
 module.exports = app;
